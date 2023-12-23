@@ -9,7 +9,7 @@ st.set_page_config(page_title="Chat with Chef App", page_icon="🍳", layout="ce
 # Load environment variables
 load_dotenv()
 
-API_KEY = os.environ.get("PALM_API_KEY")
+API_KEY = os.environ.get("AIzaSyB0a6ECvYgvgCGAUluyvyeNDuuK2C4_6Zc")
 palm.configure(api_key=API_KEY)
 
 def main():
