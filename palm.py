@@ -2,15 +2,17 @@ import streamlit as st
 import google.generativeai as palm
 from dotenv import load_dotenv
 import os
-
+from api import api
 # Konfigurasi Streamlit
 st.set_page_config(page_title="Chat with Chef App", page_icon="🍳", layout="centered")
 
 # Load environment variables
 load_dotenv()
 
-API_KEY = os.environ.get("AIzaSyB0a6ECvYgvgCGAUluyvyeNDuuK2C4_6Zc")
-palm.configure(api_key=API_KEY)
+
+
+# Configure the API key
+palm.configure(api_key=api)
 
 def main():
     # Header dengan animasi dan efek visual
