@@ -1,6 +1,5 @@
 import streamlit as st
 import google.generativeai as palm
-import os
 from api import api
 # Konfigurasi Streamlit
 st.set_page_config(page_title="Chat with Chef App", page_icon="🍳", layout="centered")
