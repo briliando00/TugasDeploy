@@ -1,13 +1,10 @@
 import streamlit as st
 import google.generativeai as palm
-from dotenv import load_dotenv
 import os
 from api import api
 # Konfigurasi Streamlit
 st.set_page_config(page_title="Chat with Chef App", page_icon="🍳", layout="centered")
 
-# Load environment variables
-load_dotenv()
 
 
 
