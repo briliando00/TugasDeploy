@@ -27,7 +27,6 @@ def main():
             response = palm.generate_text(model=model, prompt=prompt, max_output_tokens=1024)
             
             # Menampilkan respons dengan efek suara
-            st.audio("./cooking_sound.mp3", format="audio/mp3")
             st.subheader("Chef's Recipe 📜")
             st.markdown(response.result, unsafe_allow_html=False)
 
